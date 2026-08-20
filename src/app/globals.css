@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  /* --color-plum is a dark, near-black-purple reserved for TEXT on light backgrounds —
+     it must stay dark for contrast and should not be used to fill section backgrounds. */
+  --color-plum: #2a1738;
+  /* --color-mauve is the section-background purple — the original deep plum hue, lightened slightly. */
+  --color-mauve: #412556;
+  --color-violet: #7d5b74;
+  --color-amethyst: #8b5d78;
+  --color-gold: #c9a45c;
+  --color-champagne: #e8d7a8;
+  --color-ivory: #faf7f1;
+  --color-charcoal: #241f27;
+}
+
+@theme inline {
+  --color-plum: var(--color-plum);
+  --color-mauve: var(--color-mauve);
+  --color-violet: var(--color-violet);
+  --color-amethyst: var(--color-amethyst);
+  --color-gold: var(--color-gold);
+  --color-champagne: var(--color-champagne);
+  --color-ivory: var(--color-ivory);
+  --color-charcoal: var(--color-charcoal);
+
+  --font-display: var(--font-cormorant), "Playfair Display", serif;
+  --font-body: var(--font-manrope), "Inter", sans-serif;
+
+  --animate-fade-up: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-plum);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.label {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

@@ -17,9 +17,9 @@ export default function BookReviews() {
   return (
     <section className="bg-ivory pt-20 pb-10 md:pt-28 md:pb-14">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        <div className="flex items-center justify-between gap-3 md:gap-6">
           <SectionHeading eyebrow="Reader Reviews" title={<>Readers of <span className="italic text-violet">From Broken to Bliss</span></>} />
-          <div className="hidden gap-3 sm:flex">
+          <div className="flex gap-2 md:gap-3 flex-shrink-0">
             <button
               type="button"
               aria-label="Scroll reviews left"
@@ -45,7 +45,7 @@ export default function BookReviews() {
           whileInView="show"
           viewport={{ once: true, margin: "-60px" }}
           variants={staggerContainer(0.05)}
-          className="mt-14 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="mt-8 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {bookReviews.map((r) => (
             <motion.figure

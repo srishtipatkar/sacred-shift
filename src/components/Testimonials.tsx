@@ -40,7 +40,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="overflow-x-auto scrollbar-hide mt-8" ref={scrollContainerRef}>
+        <div className="overflow-x-hidden scrollbar-hide mt-8" ref={scrollContainerRef}>
           <div className="flex gap-6 pb-4">
             {testimonials.map((t, i) => (
               <motion.figure

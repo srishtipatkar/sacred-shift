@@ -18,9 +18,9 @@ export default function Testimonials() {
   return (
     <section className="bg-ivory py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <SectionHeading eyebrow="Real Stories" title={<>Real Stories. <span className="italic text-violet">Real Shifts.</span></>} />
-          <div className="hidden gap-3 sm:flex">
+        <div className="flex items-center justify-between gap-3 md:gap-6">
+          <SectionHeading eyebrow="Real Stories" title={<>Real Stories.<br /> <span className="italic text-violet">Real Shifts.</span></>} />
+          <div className="flex gap-2 md:gap-3 flex-shrink-0">
             <button
               type="button"
               aria-label="Scroll testimonials left"
@@ -40,7 +40,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="overflow-x-auto scrollbar-hide mt-16" ref={scrollContainerRef}>
+        <div className="overflow-x-auto scrollbar-hide mt-8" ref={scrollContainerRef}>
           <div className="flex gap-6 pb-4">
             {testimonials.map((t, i) => (
               <motion.figure

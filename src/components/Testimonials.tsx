@@ -12,7 +12,7 @@ export default function Testimonials() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: -1 | 1) => {
-    scrollContainerRef.current?.scrollBy({ left: direction * 400, behavior: "smooth" });
+    scrollContainerRef.current?.scrollBy({ left: direction * 344, behavior: "smooth" });
   };
 
   return (

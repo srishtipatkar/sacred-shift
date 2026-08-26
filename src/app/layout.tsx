@@ -47,7 +47,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Coach Ujwal" }],
   icons: {
-    icon: "/images/logo2.jpeg",
+    icon: "/favicon.ico",
+    apple: "/images/logo2.jpeg",
   },
   openGraph: {
     type: "website",

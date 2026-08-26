@@ -51,7 +51,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <Link href="/" className="flex items-center gap-2.5 focus-ring rounded" onClick={() => setOpen(false)}>
           <Image
-            src="/images/logo2.png"
+            src="/images/logo2.jpeg"
             alt="The Sacred Shift - Coach Ujwal"
             width={36}
             height={36}

@@ -47,7 +47,7 @@ export default function EmotionalHook() {
               >
                 {item.icon}
               </svg>
-              <p className="font-display text-xl text-charcoal/80 md:text-2xl">{item.text}</p>
+              <p className="font-display font-bold text-xl text-charcoal/80 md:text-2xl">{item.text}</p>
             </motion.div>
           ))}
         </motion.div>

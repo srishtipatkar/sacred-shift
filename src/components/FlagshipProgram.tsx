@@ -52,7 +52,7 @@ export default function FlagshipProgram() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.35 }}
-          className="label mt-8 text-amethyst"
+          className="font-display mt-8 text-lg font-bold text-gold md:text-xl"
         >
           90-Day Transformation Journey
         </motion.p>

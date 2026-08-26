@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     "spiritual growth",
   ],
   authors: [{ name: "Coach Ujwal" }],
+  icons: {
+    icon: "/images/logo2.jpeg",
+  },
   openGraph: {
     type: "website",
     url: siteUrl,

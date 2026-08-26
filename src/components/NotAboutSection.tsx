@@ -10,7 +10,7 @@ export default function NotAboutSection() {
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
         <SectionHeading eyebrow="Let's Be Clear" align="center" title="This program is not about…" />
 
-        <div className="mx-auto mt-12 flex max-w-lg flex-col items-center gap-4">
+        <div className="mx-auto mt-12 flex max-w-lg flex-col items-start gap-4">
           {notAbout.map((line, i) => (
             <motion.div
               key={line}
@@ -31,7 +31,7 @@ export default function NotAboutSection() {
               >
                 <path d="M6 6l12 12M18 6L6 18" />
               </svg>
-              <p className="font-display text-xl text-charcoal/40 line-through decoration-gold/60 decoration-1 md:text-2xl">
+              <p className="font-display font-bold text-xl text-charcoal/40 line-through decoration-gold/60 decoration-1 md:text-2xl">
                 {line}
               </p>
             </motion.div>

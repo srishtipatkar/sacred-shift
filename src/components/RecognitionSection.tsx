@@ -68,7 +68,7 @@ export default function RecognitionSection() {
               >
                 {icons[i]}
               </svg>
-              <p className="font-display text-lg leading-snug text-charcoal/80 md:text-xl">{line}</p>
+              <p className="font-display font-bold text-lg leading-snug text-charcoal/80 md:text-xl">{line}</p>
             </motion.div>
           ))}
         </motion.div>

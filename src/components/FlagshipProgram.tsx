@@ -8,7 +8,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 export default function FlagshipProgram() {
   return (
-    <section id="programs" className="relative overflow-hidden bg-charcoal py-24 text-ivory md:py-32">
+    <section id="programs" className="relative overflow-hidden bg-mauve py-24 text-ivory md:py-32">
       <div
         className="pointer-events-none absolute inset-0"
         style={{
